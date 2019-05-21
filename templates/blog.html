@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if id == None %}
+<h1>Buld-a-Blog</h1>
+
+{% for post in listing %}
+<h2><a href="/blog?id={{post.id}}">{{post.title}}</a> </h2>
+<p> {{post.body}} </p>
+<hr/>
+{% endfor %}
+{%endif%}
+
+{% if id != None %}
+<h1>{{posting.title}}</h1>
+<br>
+<p>{{posting.body}}</p>
+{%endif%}
+
+{% endblock %}
