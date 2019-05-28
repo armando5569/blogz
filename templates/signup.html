@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Signup</h1>
+
+<form action="/signup" method="post">
+  <p><label>Username<input type="text" name="username"></label> {{username_error}} </p>
+    <p><label>Password<input type="password" name="password"></label> {{password_error}} </p>
+    <p><label>Verify Password<input type="password" name="verify"></label> {{verify_error}} </p>
+    <p><input type="submit" value="submit"></p>
+</form>
+{% endblock %}

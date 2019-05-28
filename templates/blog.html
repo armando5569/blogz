@@ -17,4 +17,12 @@
 <p>{{posting.body}}</p>
 {%endif%}
 
+{% if user != None %}
+{% for post in user_listing %}
+<h2><a href="/blog?id={{post.id}}">{{post.title}}</a> </h2>
+<p> {{post.body}} </p>
+<hr/>
+{% endfor %}
+{%endif%}
+
 {% endblock %}

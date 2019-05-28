@@ -10,7 +10,12 @@
     </head>
     <body>
        <nav>
-           <a href="/blog">Main Blog Page</a> | <a href="/newpost">Add a Blog Entry</a>
+           <div style="float: left">
+           <a href="/">Home</a> | <a href="/blog">Main Blog Page</a> | <a href="/newpost">Add a Blog Entry</a>
+           </div>
+           <div style="float: right">
+            <a href="/login">login</a>|<a href="/logout" method ='post'>logout</a>
+           </div>
        </nav>
 
         {% block content %}
